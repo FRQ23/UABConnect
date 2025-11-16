@@ -806,7 +806,7 @@ blockquote {
 
 .timeline-container .vertical-scrollable-timeline .list-progress {
   width: 8px;
-  height: 87%;
+  height: 95%;
   background-color: var(--primary-color);
   position: absolute;
   left: 52px;
@@ -829,7 +829,7 @@ blockquote {
 }
 
 .timeline-container .vertical-scrollable-timeline li:last-child {
-  padding-bottom: 0;
+  padding-bottom: 20px;
 }
 
 .timeline-container .vertical-scrollable-timeline li p {
@@ -1301,7 +1301,7 @@ blockquote {
   }
 
   .timeline-container .vertical-scrollable-timeline .list-progress {
-    height: 75%;
+    height: 90%;
   }
 
   .timeline-container .vertical-scrollable-timeline li {
@@ -1669,6 +1669,7 @@ blockquote {
   .timeline-container .vertical-scrollable-timeline .list-progress {
     left: 30px;
     width: 6px;
+    height: 92%;
   }
 
   .timeline-container .vertical-scrollable-timeline li .icon-holder {
