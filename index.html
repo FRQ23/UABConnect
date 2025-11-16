@@ -140,27 +140,21 @@ https://templatemo.com/tm-590-topic-listing
                                     <img src="images/businesswoman-using-tablet-analysis.jpg" class="custom-block-image img-fluid" alt="">
 
                                     <div class="custom-block-overlay-text d-flex">
-                                        <div>
+                                        <div class="flex-grow-1">
                                             <h5 class="text-white mb-2" data-translate="featured-investment-title">Propuesta de Financiamiento</h5>
 
                                             <p class="text-white" data-translate="featured-investment-desc">Nuestra propuesta contempla $75K USD para desarrollo inicial. Este es un proyecto académico que presenta un plan de financiamiento como parte de la propuesta de emprendimiento.</p>
 
                                             <a href="#section_3" class="btn custom-btn mt-2 mt-lg-3" data-translate="btn-more-info">Más Información</a>
+
+                                            <div class="social-share d-flex align-items-center mt-3">
+                                                <p class="text-white mb-0 d-flex align-items-center">
+                                                    <span data-translate="share-label">Compartir:</span><a href="https://www.instagram.com/uabconnect.21?igsh=MWM5bjIwNndsaDFoZQ==" class="social-icon-link bi-instagram ms-2" target="_blank" rel="noopener" style="text-decoration: none;"></a>
+                                                </p>
+                                            </div>
                                         </div>
 
-                                        <span class="badge bg-finance rounded-pill ms-auto">$75K</span>
-                                    </div>
-
-                                    <div class="social-share d-flex">
-                                        <p class="text-white me-4" data-translate="share-label">Compartir:</p>
-
-                                        <ul class="social-icon">
-                                            <li class="social-icon-item">
-                                                <a href="https://www.instagram.com/uabconnect.21?igsh=MWM5bjIwNndsaDFoZQ==" class="social-icon-link bi-instagram" target="_blank" rel="noopener"></a>
-                                            </li>
-                                        </ul>
-
-                                        <a href="#" class="custom-icon bi-bookmark ms-auto"></a>
+                                        <span class="badge bg-finance rounded-pill ms-auto align-self-start">$75K</span>
                                     </div>
 
                                     <div class="section-overlay"></div>
@@ -910,6 +904,15 @@ https://templatemo.com/tm-590-topic-listing
                         // Handle HTML content for FAQ answers, descriptions, and location
                         if (key.includes('answer') || key.includes('desc') || key === 'contact-location') {
                             element.innerHTML = translations[lang][key];
+                        } else if (key === 'share-label') {
+                            // Preserve the Instagram link when updating share-label
+                            const instagramLink = element.querySelector('a.social-icon-link');
+                            if (instagramLink) {
+                                const linkHTML = instagramLink.outerHTML;
+                                element.innerHTML = translations[lang][key] + linkHTML;
+                            } else {
+                                element.textContent = translations[lang][key];
+                            }
                         } else {
                             element.textContent = translations[lang][key];
                         }
