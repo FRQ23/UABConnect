@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>UABConnect - Formulario de Contacto</title>
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap" rel="stylesheet">
+                        
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/templatemo-topic-listing.css" rel="stylesheet">
+<!--
+
+TemplateMo 590 topic listing
+
+https://templatemo.com/tm-590-topic-listing
+
+-->
+    </head>
+    
+    <body class="topics-listing-page" id="top">
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <i class="bi-back"></i>
+                        <span>UABConnect</span>
+                    </a>
+
+                    <div class="d-lg-none ms-auto me-4">
+                        <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                    </div>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_1">Inicio</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_2">El Proyecto</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_3">Plan de Financiamiento</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_4">Preguntas Frecuentes</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link click-scroll" href="index.html#section_5">Contacto</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Páginas</a>
+
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="topics-listing.html">Proyecto</a></li>
+
+                                    <li><a class="dropdown-item active" href="contact.html">Formulario de Contacto</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <div class="d-none d-lg-block">
+                            <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+
+            <header class="site-header d-flex flex-column justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row align-items-center">
+
+                        <div class="col-lg-5 col-12">
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="index.html">Página Principal</a></li>
+
+                                    <li class="breadcrumb-item active" aria-current="page">Formulario de Contacto</li>
+                                </ol>
+                            </nav>
+
+                            <h2 class="text-white">Formulario de Contacto</h2>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+
+            <section class="section-padding section-bg">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <h3 class="mb-4 pb-2">Nos encantaría saber de ti</h3>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <form action="#" method="post" class="custom-form contact-form" role="form">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        <div class="form-floating">
+                                            <input type="text" name="name" id="name" class="form-control" placeholder="Nombre" required="">
+                                            
+                                            <label for="floatingInput">Nombre</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-md-6 col-12"> 
+                                        <div class="form-floating">
+                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Correo electrónico" required="">
+                                            
+                                            <label for="floatingInput">Correo electrónico</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-12 col-12">
+                                        <div class="form-floating">
+                                            <input type="text" name="subject" id="subject" class="form-control" placeholder="Asunto" required="">
+                                            
+                                            <label for="floatingInput">Asunto</label>
+                                        </div>
+
+                                        <div class="form-floating">
+                                            <textarea class="form-control" id="message" name="message" placeholder="Cuéntanos sobre tu consulta"></textarea>
+                                            
+                                            <label for="floatingTextarea">Cuéntanos sobre tu consulta</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-12 ms-auto">
+                                        <button type="submit" class="form-control">Enviar</button>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="col-lg-5 col-12 mx-auto mt-5 mt-lg-0">
+                            <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3365.5!2d-117.0!3d32.5!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9488b5b8b5b8b%3A0x5b8b5b8b5b8b5b8b!2sUniversidad%2014418%2C%20UABC%2C%20Parque%20Internacional%20Industrial%20Tijuana%2C%2022390%20Tijuana%2C%20B.C.%2C%20Mexico!5e0!3m2!1ses!2smx!4v1234567890" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                            <h5 class="mt-4 mb-2">UABConnect</h5>
+
+                            <p>Proyecto de estudiantes de la Facultad de Ciencias Químicas e Ingeniería<br>Universidad Autónoma de Baja California<br>Universidad 14418, Parque Internacional Industrial Tijuana<br>22390 Tijuana, B.C., México</p>
+                            
+                            <p class="mt-3 mb-2">
+                                <strong>Email:</strong> <a href="mailto:contacto@uabcconnect.com">contacto@uabcconnect.com</a>
+                            </p>
+                            
+                            <p class="mb-0">
+                                <strong>Inversiones:</strong> <a href="mailto:inversiones@uabcconnect.com">inversiones@uabcconnect.com</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-12 mb-4 pb-2 footer-logo-col">
+                        <a class="navbar-brand mb-2 footer-logo" href="index.html">
+                            <i class="bi-back"></i>
+                            <span>UABConnect</span>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <h6 class="site-footer-title mb-3">Recursos</h6>
+
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="index.html#section_1" class="site-footer-link">Inicio</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="index.html#section_3" class="site-footer-link">Plan de Financiamiento</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="index.html#section_4" class="site-footer-link">Preguntas Frecuentes</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="index.html#section_5" class="site-footer-link">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                        <h6 class="site-footer-title mb-3">Información</h6>
+
+                        <p class="text-white d-flex mb-1">
+                            <a href="mailto:contacto@uabcconnect.com" class="site-footer-link">
+                                contacto@uabcconnect.com
+                            </a>
+                        </p>
+
+                        <p class="text-white d-flex">
+                            <a href="mailto:inversiones@uabcconnect.com" class="site-footer-link">
+                                inversiones@uabcconnect.com
+                            </a>
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Español</button>
+
+                            <ul class="dropdown-menu">
+                                <li><button class="dropdown-item" type="button">Español</button></li>
+
+                                <li><button class="dropdown-item" type="button">English</button></li>
+                            </ul>
+                        </div>
+
+                        <p class="copyright-text mt-lg-5 mt-4">Copyright © 2025 UABConnect. All rights reserved.
+                        <br><br>Propuesta para crear la primera universidad acreditada en el metaverso
+                        <br><span class="small">Proyecto académico de estudiantes de la Facultad de Ciencias Químicas e Ingeniería de UABC</span></p>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
