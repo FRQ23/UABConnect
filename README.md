@@ -2,13 +2,13 @@
 
 Propuesta académica para crear la primera universidad acreditada en el metaverso. Este repositorio contiene el sitio informativo del proyecto, construido sobre una plantilla responsiva de Bootstrap y personalizado con la narrativa del equipo de estudiantes de la Facultad de Ciencias Químicas e Ingeniería de la UABC.
 
-## ✨ Características principales
+## Características principales
 - **Historia completa del proyecto**: secciones de visión, tecnología, financiamiento, impacto y FAQ.
 - **Switch de idioma (ES/EN)** basado en `localStorage` y atributos `data-translate`.
 - **Diseño responsivo** con Bootstrap 5, íconos de Bootstrap Icons y tipografías de Google Fonts.
 - **Contenido estático optimizado** listo para desplegarse en GitHub Pages u otro hosting estático.
 
-## 🗂 Estructura del repositorio
+## Estructura del repositorio
 ```
 UABConnect/
 ├── index.html              # Página principal
@@ -21,10 +21,10 @@ UABConnect/
 └── fonts/                  # Tipografías locales cuando aplica
 ```
 
-## 🛠️ Requisitos
+## Requisitos
 No se necesita backend ni compilación: basta un navegador moderno. Para editar se recomienda cualquier editor (VS Code, etc.).
 
-## 🚀 Ejecutar en local
+## Ejecutar en local
 1. Clona el repositorio.
 2. Abre `index.html` en tu navegador o, si prefieres un servidor local:
 
@@ -36,7 +36,7 @@ Start-Process msedge.exe index.html
 
 También puedes usar un servidor estático (por ejemplo `npx serve` o la extensión "Live Server" de VS Code) para habilitar recarga automática.
 
-## 🌐 Despliegue en GitHub Pages
+## Despliegue en GitHub Pages
 1. Sube/actualiza el repositorio en GitHub (`main` o `master`).
 2. Ve a **Settings → Pages**.
 3. En **Build and deployment**, selecciona **Deploy from a branch**, elige la rama principal y la carpeta `/ (root)`.
