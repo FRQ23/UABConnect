@@ -1166,9 +1166,69 @@ blockquote {
     padding: 10px;
   }
 
+  .hero-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .hero-section h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+
+  .hero-section h6 {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .hero-section .btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+
   .featured-section {
     border-radius: 0 0 80px 80px;
     padding-bottom: 50px;
+  }
+
+  .featured-section .row {
+    bottom: 0;
+    margin-bottom: 0;
+  }
+
+  .custom-block {
+    margin-bottom: 30px;
+  }
+
+  .custom-block-overlay-text {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .custom-block-overlay-text .badge {
+    margin-top: 15px;
+    margin-left: 0;
+    align-self: flex-start;
+  }
+
+  .custom-block-overlay-text > div {
+    width: 100%;
+  }
+
+  .custom-block-overlay-text .btn {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .social-share {
+    flex-wrap: wrap;
+    padding: 15px 20px;
+  }
+
+  .social-share p {
+    width: 100%;
+    margin-bottom: 10px;
   }
 
   .custom-block-topics-listing .custom-block-image {
@@ -1187,6 +1247,39 @@ blockquote {
 
   .timeline-container .vertical-scrollable-timeline li {
     padding-left: 135px;
+  }
+
+  .timeline-section .btn {
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+
+  .faq-section .row {
+    flex-direction: column-reverse;
+  }
+
+  .faq-section .col-lg-5 {
+    margin-bottom: 30px;
+  }
+
+  .contact-section .row {
+    flex-direction: column;
+  }
+
+  .contact-section .col-lg-5,
+  .contact-section .col-lg-3 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .contact-section .col-lg-3.ms-auto {
+    margin-left: 0 !important;
+  }
+
+  .contact-section .col-lg-3.mx-auto {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
 
   .subscribe-form-wrap {
@@ -1208,6 +1301,23 @@ blockquote {
 }
 
 @media screen and (max-width: 768px) {
+  .hero-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .hero-section h1 {
+    font-size: 36px;
+  }
+
+  .hero-section h6 {
+    font-size: 14px;
+  }
+
+  .hero-section p {
+    font-size: 14px;
+  }
+
   .nav-tabs {
     flex-wrap: wrap;
     gap: 10px;
@@ -1227,6 +1337,16 @@ blockquote {
     margin-bottom: 25px;
   }
 
+  .custom-block .d-flex {
+    flex-direction: column;
+  }
+
+  .custom-block .badge {
+    align-self: flex-start;
+    margin-top: 15px;
+    margin-left: 0;
+  }
+
   .contact-form .form-floating>textarea {
     min-height: 200px;
     resize: vertical;
@@ -1234,6 +1354,100 @@ blockquote {
 
   .contact-form .form-floating + .form-floating {
     margin-top: 15px;
+  }
+
+  .custom-block-overlay {
+    min-height: 300px;
+  }
+
+  .custom-block-overlay-text {
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  .custom-block-overlay-text .badge {
+    margin-top: 10px;
+    margin-left: 0;
+    align-self: flex-start;
+    position: static;
+  }
+
+  .custom-block-overlay-text > div {
+    width: 100%;
+  }
+
+  .custom-block-overlay-text h5 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .custom-block-overlay-text p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+
+  .social-share {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+  }
+
+  .social-share p {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-right: 0;
+  }
+
+  .timeline-container .vertical-scrollable-timeline li {
+    padding-left: 100px;
+  }
+
+  .timeline-container .vertical-scrollable-timeline .list-progress {
+    left: 40px;
+  }
+
+  .timeline-container .vertical-scrollable-timeline li .icon-holder {
+    width: 80px;
+    height: 80px;
+    left: 0;
+  }
+
+  .timeline-container .vertical-scrollable-timeline li .icon-holder::before {
+    width: 60px;
+    height: 60px;
+  }
+
+  .timeline-container .vertical-scrollable-timeline li::before {
+    left: 40px;
+  }
+
+  .timeline-section h4 {
+    font-size: 20px;
+  }
+
+  .timeline-section p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .faq-section .col-lg-6,
+  .faq-section .col-lg-5 {
+    width: 100%;
+  }
+
+  .faq-section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .contact-section .col-lg-5,
+  .contact-section .col-lg-3 {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .google-map {
+    margin-bottom: 25px;
   }
 
   .site-footer::after {
@@ -1277,23 +1491,126 @@ blockquote {
 
 @media screen and (max-width: 480px) {
   h1 {
-    font-size: 36px;
+    font-size: 32px;
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   h3 {
-    font-size: 26px;
-  }
-
-  h4 {
     font-size: 22px;
   }
 
-  h5 {
+  h4 {
     font-size: 20px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  h6 {
+    font-size: 14px;
+  }
+
+  .hero-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .hero-section h1 {
+    font-size: 28px;
+  }
+
+  .hero-section .btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .featured-section {
+    padding-bottom: 40px;
+  }
+
+  .custom-block {
+    padding: 20px;
+  }
+
+  .custom-block h5 {
+    font-size: 18px;
+  }
+
+  .custom-block p {
+    font-size: 14px;
+  }
+
+  .custom-block-overlay {
+    min-height: 250px;
+  }
+
+  .custom-block-overlay-text {
+    padding: 12px;
+  }
+
+  .custom-block-overlay-text h5 {
+    font-size: 16px;
+  }
+
+  .custom-block-overlay-text p {
+    font-size: 13px;
+  }
+
+  .timeline-container .vertical-scrollable-timeline li {
+    padding-left: 80px;
+    padding-right: 0;
+  }
+
+  .timeline-container .vertical-scrollable-timeline .list-progress {
+    left: 30px;
+    width: 6px;
+  }
+
+  .timeline-container .vertical-scrollable-timeline li .icon-holder {
+    width: 60px;
+    height: 60px;
+  }
+
+  .timeline-container .vertical-scrollable-timeline li .icon-holder::before {
+    width: 45px;
+    height: 45px;
+  }
+
+  .timeline-container .vertical-scrollable-timeline li::before {
+    left: 30px;
+    width: 6px;
+  }
+
+  .timeline-section h4 {
+    font-size: 18px;
+  }
+
+  .timeline-section p {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .faq-section .accordion-button {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  .faq-section .accordion-body {
+    font-size: 13px;
+    line-height: 1.6;
+    padding: 15px;
+  }
+
+  .contact-section h4 {
+    font-size: 18px;
+  }
+
+  .contact-section p {
+    font-size: 14px;
   }
 
   .site-footer::after {
@@ -1320,7 +1637,7 @@ blockquote {
   }
 
   .copyright-text {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.6;
   }
 }
