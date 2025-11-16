@@ -1225,13 +1225,14 @@ blockquote {
   }
 
   .hero-section {
-    padding-top: 80px;
+    padding-top: 120px;
     padding-bottom: 80px;
   }
 
   .hero-section h1 {
     font-size: 42px;
     margin-bottom: 15px;
+    margin-top: 0;
   }
 
   .hero-section h6 {
@@ -1360,12 +1361,13 @@ blockquote {
 
 @media screen and (max-width: 768px) {
   .hero-section {
-    padding-top: 60px;
+    padding-top: 100px;
     padding-bottom: 60px;
   }
 
   .hero-section h1 {
     font-size: 36px;
+    margin-top: 0;
   }
 
   .hero-section h6 {
@@ -1573,12 +1575,13 @@ blockquote {
   }
 
   .hero-section {
-    padding-top: 50px;
+    padding-top: 90px;
     padding-bottom: 50px;
   }
 
   .hero-section h1 {
     font-size: 28px;
+    margin-top: 0;
   }
 
   .hero-section .btn {
