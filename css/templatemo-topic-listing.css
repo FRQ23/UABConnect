@@ -1101,12 +1101,19 @@ blockquote {
 
   .navbar-nav .dropdown-menu {
     position: relative;
-    left: 10px;
+    left: 0;
     opacity: 1;
     pointer-events: auto;
-    max-width: 155px;
+    width: 100%;
+    max-width: none;
     margin-top: 10px;
     margin-bottom: 15px;
+    border-radius: var(--border-radius-medium);
+    box-shadow: none;
+  }
+
+  .navbar .dropdown-menu::before {
+    display: none;
   }
 
   .navbar-expand-lg .navbar-nav {
@@ -1152,6 +1159,36 @@ blockquote {
   .subscribe-form-wrap {
     padding-top: 30px;
     padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-tabs {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav-tabs .nav-item,
+  .nav-tabs .nav-link {
+    width: 100%;
+  }
+
+  .nav-tabs .nav-link {
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .tab-content .custom-block {
+    margin-bottom: 25px;
+  }
+
+  .contact-form .form-floating>textarea {
+    min-height: 200px;
+    resize: vertical;
+  }
+
+  .contact-form .form-floating + .form-floating {
+    margin-top: 15px;
   }
 }
 
