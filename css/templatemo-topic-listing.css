@@ -631,17 +631,6 @@ strong {
   color: #ffffff !important;
 }
 
-.social-share .social-icon-link::before {
-  font-family: "bootstrap-icons" !important;
-  content: "\f437" !important;
-  display: inline-block !important;
-  font-size: 22px !important;
-  line-height: 1 !important;
-  color: #ffffff !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-}
-
 .social-share .social-icon-link i {
   font-size: 22px !important;
   line-height: 1 !important;
