@@ -1744,3 +1744,163 @@ blockquote {
   }
 }
 
+
+/*---------------------------------------
+  MARKETING PLAN STYLES             
+-----------------------------------------*/
+.marketing-section {
+  padding: 60px 0;
+}
+
+.section-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.subsection-title {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: #13547a;
+  font-weight: 600;
+}
+
+.foda-table, .competitor-table, .kpi-table, .roadmap-table {
+  width: 100%;
+  margin-bottom: 30px;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.foda-table th, .competitor-table th, .kpi-table th, .roadmap-table th {
+  background: #13547a;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.foda-table td, .competitor-table td, .kpi-table td, .roadmap-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+  vertical-align: top;
+}
+
+.foda-internal {
+  background: #f8f9fa;
+}
+
+.foda-external {
+  background: #e9ecef;
+}
+
+.persona-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  height: 100%;
+}
+
+.persona-card h4 {
+  color: #13547a;
+  margin-bottom: 20px;
+}
+
+.persona-card h5 {
+  color: #80d0c7;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.persona-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.persona-card li:before {
+  content: "✓ ";
+  color: #80d0c7;
+  font-weight: bold;
+}
+
+.strategy-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.strategy-card h5 {
+  color: #13547a;
+  margin-bottom: 15px;
+}
+
+.badge-custom {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin: 5px;
+  display: inline-block;
+}
+
+.badge-b2c {
+  background: #80d0c7;
+  color: white;
+}
+
+.badge-b2b {
+  background: #13547a;
+  color: white;
+}
+
+.badge-investor {
+  background: #ff6b6b;
+  color: white;
+}
+
+.objective-card {
+  background: linear-gradient(135deg, #13547a 0%, #80d0c7 100%);
+  color: white;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.objective-card h4 {
+  color: white;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.objective-card p {
+  color: white;
+  font-weight: 500;
+}
+
+.objective-card strong {
+  color: white;
+  font-weight: 700;
+}
+
+.list-styled {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-styled li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.list-styled li:last-child {
+  border-bottom: none;
+}
+
+.highlight-box {
+  background: #f8f9fa;
+  border-left: 4px solid #13547a;
+  padding: 20px;
+  margin: 20px 0;
+}
